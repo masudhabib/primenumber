@@ -1,13 +1,16 @@
-package com.company;
+package com.company.prime.primes;
 
-public class SimplePrime {
-
+public class squareRootPrime {
     public static void main(String[] args) {
+        squareRootsPrime();
+    }
+
+    private static void squareRootsPrime() {
         int num = 1103;
         boolean isPrime = true;
         int count = 0;
 
-        for(int i = 2; i < num; i++){
+        for(int i = 3; i < Math.sqrt(num); i++){
             if(num % i == 0){
                 isPrime = false;
             }
@@ -21,5 +24,4 @@ public class SimplePrime {
             System.out.println(num + " is not a prime number");
         }
     }
-
 }

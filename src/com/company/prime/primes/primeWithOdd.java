@@ -1,19 +1,23 @@
-package com.company;
+package com.company.prime.primes;
 
-public class SquareRootPrime {
+public class primeWithOdd {
     public static void main(String[] args) {
+        primesWithOdd();
+    }
+
+    private static void primesWithOdd() {
+
         int num = 1103;
         boolean isPrime = true;
         int count = 0;
 
-        for(int i = 3; i < Math.sqrt(num); i++){
+        for(int i = 3; i < num/2; i+=2){
             if(num % i == 0){
-                isPrime = false;
+                isPrime =false;
             }
             count++;
         }
-        System.out.println("The program is being executed " + count + " times.");
-
+        System.out.println("the program is being executed " + count + " times.");
         if(isPrime){
             System.out.println(num + " is a prime number");
         } else {
